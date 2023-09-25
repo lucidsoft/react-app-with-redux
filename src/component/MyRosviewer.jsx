@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ROS3D from 'ros3d';
-import ROSLIB from 'roslib'
+import * as ROS3D from 'ros3d';
+import * as ROSLIB from 'roslib'
 //import './css/general.css';
 
 class MyRosviewer extends Component {
@@ -34,7 +34,7 @@ class MyRosviewer extends Component {
           tfClient : tfClient,
           path : 'http://resources.robotwebtools.org/',
           rootObject : viewer.scene,
-          loader : ROS3D.COLLADA_LOADER_2
+          //loader : ROS3D.COLLADA_LOADER_2
         });
 
         return (
